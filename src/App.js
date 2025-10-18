@@ -30,14 +30,12 @@ function App() {
           />
           {name && <p className="greeting">Hello, {name}! 👋</p>}
         </div>
-        </div>
 
         <div className="info-section">
           <p>This is a simple React app with interactive features!</p>
           <p>Built with React and deployed to GitHub 🎉</p>
         </div>
       </header>
-    </div>
     </div>
   );
 }
