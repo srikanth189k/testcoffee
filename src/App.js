@@ -34,6 +34,10 @@ function App() {
         <div className="info-section">
           <p>This is a simple React app with interactive features!</p>
           <p>Built with React and deployed to GitHub 🎉</p>
+          <div className="broken-section">
+            <h3>This will cause an error!</h3>
+            <p>Missing closing tag and malformed JSX
+          </div>
         </div>
       </header>
     </div>
