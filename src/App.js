@@ -8,12 +8,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to My React App! 🚀</h1>
+        <h1>This is Cool - My Amazing React App! 🔥</h1>
         
         <div className="counter-section">
           <h2>Counter: {count}</h2>
           <div className="button-group">
             <button onClick={() => setCount(count + 1)}>+</button>
+            <button onClick={() => setCount(count + 1)}>+</button> // Intentionally duplicate button
             <button onClick={() => setCount(count - 1)}>-</button>
             <button onClick={() => setCount(0)}>Reset</button>
           </div>
