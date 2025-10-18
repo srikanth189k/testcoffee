@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to My React App! 🚀</h1>
+        <h1>This Is Cool - Amazing React App! 🚀</h1>
         
         <div className="counter-section">
           <h2>Counter: {count}</h2>
@@ -30,12 +30,14 @@ function App() {
           />
           {name && <p className="greeting">Hello, {name}! 👋</p>}
         </div>
+        </div>
 
         <div className="info-section">
           <p>This is a simple React app with interactive features!</p>
           <p>Built with React and deployed to GitHub 🎉</p>
         </div>
       </header>
+    </div>
     </div>
   );
 }
