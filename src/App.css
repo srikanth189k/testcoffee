@@ -1,41 +1,46 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: radial-gradient(circle at top, #1f2937 0%, #0b1120 45%, #020617 100%);
+  color: #f8fafc;
 }
 
 .App-header {
   padding: 40px 20px;
-  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  gap: 24px;
 }
 
 h1 {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 8px rgba(15, 23, 42, 0.6);
 }
 
-.counter-section, .greeting-section, .info-section {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+.counter-section,
+.greeting-section,
+.info-section {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(16px);
   border-radius: 20px;
   padding: 30px;
-  margin: 20px 0;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 0 16px 0;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.2);
   max-width: 500px;
   width: 100%;
 }
 
-.counter-section h2 {
+.counter-section h2,
+.greeting-section h2 {
   margin-bottom: 20px;
   font-size: 2rem;
+  color: #e2e8f0;
 }
 
 .button-group {
@@ -46,77 +51,80 @@ h1 {
 }
 
 button {
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
   border: none;
-  color: white;
+  color: #0b1120;
   padding: 12px 24px;
   font-size: 1.1rem;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  font-weight: bold;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.35);
+  font-weight: 700;
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 28px rgba(99, 102, 241, 0.45);
 }
 
 button:active {
   transform: translateY(0);
 }
 
-.greeting-section h2 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-}
-
 .name-input {
   padding: 12px 20px;
   font-size: 1.1rem;
-  border: none;
+  border: 1px solid rgba(148, 163, 184, 0.4);
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
+  background: rgba(15, 23, 42, 0.9);
+  color: #f8fafc;
   width: 100%;
   max-width: 300px;
   margin-bottom: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.6), 0 4px 15px rgba(2, 6, 23, 0.45);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .name-input:focus {
   outline: none;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.35);
+}
+
+.name-input::placeholder {
+  color: rgba(148, 163, 184, 0.75);
 }
 
 .greeting {
   font-size: 1.5rem;
   margin-top: 15px;
-  color: #ffd700;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  color: #38bdf8;
+  text-shadow: 0 2px 6px rgba(8, 47, 73, 0.6);
 }
 
 .info-section p {
   margin: 10px 0;
   font-size: 1.1rem;
-  opacity: 0.9;
+  color: rgba(226, 232, 240, 0.85);
 }
 
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
   }
-  
-  .counter-section, .greeting-section, .info-section {
+
+  .counter-section,
+  .greeting-section,
+  .info-section {
     margin: 15px 10px;
     padding: 20px;
   }
-  
+
   .button-group {
     gap: 10px;
   }
-  
+
   button {
     padding: 10px 20px;
     font-size: 1rem;
