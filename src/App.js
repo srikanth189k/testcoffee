@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Footer from './Footer';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Welcome to My React App! 🚀</h1>
-        
+
         <div className="counter-section">
           <h2>Counter: {count}</h2>
           <div className="button-group">
@@ -36,6 +37,7 @@ function App() {
           <p>Built with React and deployed to GitHub 🎉</p>
         </div>
       </header>
+      <Footer />
     </div>
   );
 }
