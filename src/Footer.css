@@ -1,0 +1,50 @@
+.footer {
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-top: 1px solid rgba(100, 100, 120, 0.3);
+  margin-top: auto;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #a78bfa;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.footer-link:hover {
+  color: #c4b5fd;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  background: rgba(167, 139, 250, 0.1);
+}
+
+.x-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover .x-icon {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+  }
+
+  .x-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
